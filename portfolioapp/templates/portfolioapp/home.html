@@ -1,0 +1,93 @@
+{% extends 'portfolioapp/base.html' %} {% load static %} {% block title %}
+Inicio {% endblock %} {% block content %}
+
+<!-- Header con fondo y texto -->
+<header class="py-5 my-5 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h4 class="fw-bold">hi! My name is: Luis Ramos</h4>
+        <h1 class="text-warning display-2">Desarrollador de Software</h1>
+        <p class="lead">freelance</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'portfolioapp/img/perfil3.jpg' %}"
+          class="img-fluid rounded"
+          style="max-width: 400px"
+          alt="Mi Foto"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Banner intermedio con imagen y texto -->
+<section class="container-fluid bg-fondo-personalizado my-5 text-white py-5">
+  <div class="container">
+    <div class="text-center py-4">
+      <h3 class="section-title text-warning">ACERCA DE MI</h3>
+    </div>
+
+    <div class="row align-items-start">
+      <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+        <img
+          src="{% static 'portfolioapp/img/perfil2.jpg' %}"
+          class="img-fluid rounded"
+          style="max-width: 300px"
+          alt="Banner"
+        />
+      </div>
+      <div class="col-12 col-md-7 text-center text-md-start">
+        <h3>Hola !</h3>
+        <br />
+        <p>
+          Soy un desarrollador web enfocado en tecnologías modernas y siempre en
+          busca de nuevos retos que me permitan crecer profesionalmente. Me
+          apasiona construir soluciones eficientes y escalables, manteniendo
+          buenas prácticas de desarrollo y un enfoque orientado al detalle. Soy
+          un profesional enfocado en el desarrollo web con tecnologías modernas,
+          siempre buscando nuevos retos.
+        </p>
+        <br />
+        <p>
+          Trabajo con <strong>Python</strong>, <strong>Django</strong>,
+          <strong>JavaScript</strong> y desarrollo
+          <strong>diseños responsivos</strong> usando
+          <strong>Bootstrap</strong>.
+        </p>
+        <p>
+          Trabajo con Python, Django, JavaScript, y diseño responsivo con
+          Bootstrap.
+        </p>
+        <a href="#contact" class="btn btn-outline-warning mt-3">Contáctame</a>
+        <a href="#contact" class="btn btn-warning mt-3">descarga cv</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de servicios -->
+<section id="services" class="py-5 bg-dark text-white text-center">
+  <h3 class="section-title text-warning pb-5">Mis Servicios</h3>
+
+  <div class="container">
+    <div class="row">
+
+      {% for servicio in servicios %}
+      <div class="col-md-3 mb-4">
+        <div class="p-3 border text-white rounded">
+          <i class="{{ servicio.icono }} fs-1"></i>
+          <h5 class="mt-2">{{ servicio.titulo }}</h5>
+          <p>{{ servicio.descripcion }}</p>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  
+</section>
+
+{% endblock %}

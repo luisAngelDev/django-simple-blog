@@ -1,0 +1,9 @@
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bg-fondo-personalizado {
+    background-color: #161616 !important;
+}
