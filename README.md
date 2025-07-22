@@ -2,6 +2,10 @@
 
 Este es un sitio web tipo web personal profesional desarrollado con Django. Su propósito es presentar información personal y profesional de una persona, incluyendo su carrera, trayectoria, servicios que ofrece y la posibilidad de descargar su CV. Toda la información puede ser gestionada desde el panel de administración.
 
+## Vista previa
+
+![Vista previa](screenshots/preview-home.png)
+
 ## Características
 
 - Página principal con presentación personal.
