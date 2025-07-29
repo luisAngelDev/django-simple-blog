@@ -30,7 +30,7 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
 
 1. Clona el repositorio:
    ```bash
-   https://github.com/luisAngelDev/django-simple-blog.git
+   git clone https://github.com/luisAngelDev/django-simple-blog.git
    cd blog-personal
    ```
 
