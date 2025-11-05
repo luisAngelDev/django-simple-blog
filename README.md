@@ -8,10 +8,10 @@ Este es un sitio web tipo web personal profesional desarrollado con Django. Su p
 
 ## Características
 
-- Página principal con presentación personal.
-- Sección sobre educación y experiencia profesional.
-- Panel de administración para gestionar contenido.
-- Listado de servicios ofrecidos.
+- Cuenta con una página principal con presentación personal.
+- Sección sobre educación academica y experiencia profesional.
+- Panel de administración en django admin para gestionar contenido.
+- Listado de servicios profesionales ofrecidos.
 - Enlace de descarga de CV.
 - Interfaz sencilla y profesional.
 - Backend desarrollado con Django 5.2.4.
